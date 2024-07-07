@@ -20,7 +20,7 @@
 
 ### 🔥 Introducing Debias: a new loss weighting strategy in noise_prediction mode that solves the bais problem in diffusion model training✨:
 <p align="center">
-<img src="https://github.com/FoundationVision/VAR/assets/39692511/3e12655c-37dc-4528-b923-ec6c4cfef178" width=93%>
+<img src="https://github.com/yuhuUSTC/Debias/blob/main/assets/FID_trainsample.pdf" width=93%>
 <p>
 
 ### 🔥 Debias achieves both higher training efficiency and better performance with same inference steps 🚀:
