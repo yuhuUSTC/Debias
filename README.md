@@ -10,7 +10,7 @@
 
 </div>
 <p align="center" style="font-size: larger;">
-  <a href="https://arxiv.org/abs/2404.02905">Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction</a>
+  <a href="[https://arxiv.org/abs/2404.02905](https://arxiv.org/abs/2310.08442)">Unmasking Bias in Diffusion Model Training</a>
 </p>
 
 <p align="center">
@@ -18,16 +18,6 @@
 <p>
 
 <br>
-
-## 🕹️ Try and Play with VAR!
-
-We provide a [demo website](https://var.vision/demo) for you to play with VAR models and generate images interactively. Enjoy the fun of visual autoregressive modeling!
-
-We also provide [demo_sample.ipynb](demo_sample.ipynb) for you to see more technical details about VAR.
-
-[//]: # (<p align="center">)
-[//]: # (<img src="https://user-images.githubusercontent.com/39692511/226376648-3f28a1a6-275d-4f88-8f3e-cd1219882488.png" width=50%)
-[//]: # (<p>)
 
 
 ## What's New?
