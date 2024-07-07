@@ -5,9 +5,8 @@
 [![arXiv](https://img.shields.io/badge/arXiv%20paper-2404.02905-b31b1b.svg)](https://arxiv.org/abs/2404.02905)&nbsp;
 [![huggingface weights](https://img.shields.io/badge/%F0%9F%A4%97%20Weights-FoundationVision/var-yellow)](https://huggingface.co/FoundationVision/var)&nbsp;
 
-
-
 <br>
+
 ## What's New?
 
 ### 🔥 Introducing VAR: a new paradigm in autoregressive visual generation✨:
