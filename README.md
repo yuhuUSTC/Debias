@@ -137,12 +137,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Citation
 If our work assists your research, feel free to give us a star ⭐ or cite us using:
 ```
-@Article{VAR,
-      title={Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction}, 
-      author={Keyu Tian and Yi Jiang and Zehuan Yuan and Bingyue Peng and Liwei Wang},
+
+@inproceedings{Debias,
+      title={Unmasking Bias in Diffusion Model Training}, 
+      author={Hu Yu and Li Shen and Jie Huang and Hongsheng Li and Feng Zhao},
+      booktitle={The 18th European Conference on Computer Vision ECCV 2024},
       year={2024},
-      eprint={2404.02905},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      organization={Springer}
 }
 ```
