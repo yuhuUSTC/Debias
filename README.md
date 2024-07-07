@@ -35,59 +35,16 @@ Visual Autoregressive Modeling (VAR) redefines the autoregressive learning on im
 <p>
 
 
-### 🔥 Zero-shot generalizability🛠️:
 
-<p align="center">
-<img src="https://github.com/FoundationVision/VAR/assets/39692511/a54a4e52-6793-4130-bae2-9e459a08e96a" width=70%>
-<p>
-
-#### For a deep dive into our analyses, discussions, and evaluations, check out our [paper](https://arxiv.org/abs/2404.02905).
+## Model zoo
+We provide the pretrained checkpoints which can be downloaded from the following link [checkpoints](https://huggingface.co/FoundationVision/var/resolve/main/var_d16.pth):
 
 
-## VAR zoo
-We provide VAR models for you to play with, which are on <a href='https://huggingface.co/FoundationVision/var'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Huggingface-FoundationVision/var-yellow'></a> or can be downloaded from the following links:
-
-|   model    | reso. |   FID    | rel. cost | #params | HF weights🤗                                                                        |
-|:----------:|:-----:|:--------:|:---------:|:-------:|:------------------------------------------------------------------------------------|
-|  VAR-d16   |  256  |   3.55   |    0.4    |  310M   | [var_d16.pth](https://huggingface.co/FoundationVision/var/resolve/main/var_d16.pth) |
-|  VAR-d20   |  256  |   2.95   |    0.5    |  600M   | [var_d20.pth](https://huggingface.co/FoundationVision/var/resolve/main/var_d20.pth) |
-|  VAR-d24   |  256  |   2.33   |    0.6    |  1.0B   | [var_d24.pth](https://huggingface.co/FoundationVision/var/resolve/main/var_d24.pth) |
-|  VAR-d30   |  256  |   1.97   |     1     |  2.0B   | [var_d30.pth](https://huggingface.co/FoundationVision/var/resolve/main/var_d30.pth) |
-| VAR-d30-re |  256  | **1.80** |     1     |  2.0B   | [var_d30.pth](https://huggingface.co/FoundationVision/var/resolve/main/var_d30.pth) |
-
-You can load these models to generate images via the codes in [demo_sample.ipynb](demo_sample.ipynb). Note: you need to download [vae_ch160v4096z32.pth](https://huggingface.co/FoundationVision/var/resolve/main/vae_ch160v4096z32.pth) first.
-
-
-## Installation
-
-1. Install `torch>=2.0.0`.
-2. Install other pip packages via `pip3 install -r requirements.txt`.
-3. Prepare the [ImageNet](http://image-net.org/) dataset
-    <details>
-    <summary> assume the ImageNet is in `/path/to/imagenet`. It should be like this:</summary>
-
-    ```
-    /path/to/imagenet/:
-        train/:
-            n01440764: 
-                many_images.JPEG ...
-            n01443537:
-                many_images.JPEG ...
-        val/:
-            n01440764:
-                ILSVRC2012_val_00000293.JPEG ...
-            n01443537:
-                ILSVRC2012_val_00000236.JPEG ...
-    ```
-   **NOTE: The arg `--data_path=/path/to/imagenet` should be passed to the training script.**
-    </details>
-
-5. (Optional) install and compile `flash-attn` and `xformers` for faster attention computation. Our code will automatically use them if installed. See [models/basic_var.py#L15-L30](models/basic_var.py#L15-L30).
 
 
 ## Training Scripts
 
-To train VAR-{d16, d20, d24, d30, d36-s} on ImageNet 256x256 or 512x512, you can run the following command:
+You can train the base model with various targets and loss weighting:
 ```shell
 # d16, 256x256
 torchrun --nproc_per_node=8 --nnodes=... --node_rank=... --master_addr=... --master_port=... train.py \
