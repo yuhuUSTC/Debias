@@ -7,7 +7,7 @@
 
 
 
-
+<br>
 ## What's New?
 
 ### 🔥 Introducing VAR: a new paradigm in autoregressive visual generation✨:
