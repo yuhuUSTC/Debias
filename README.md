@@ -19,15 +19,12 @@
 
 ## What's New?
 
-### 🔥 Introducing VAR: a new paradigm in autoregressive visual generation✨:
-
-Visual Autoregressive Modeling (VAR) redefines the autoregressive learning on images as coarse-to-fine "next-scale prediction" or "next-resolution prediction", diverging from the standard raster-scan "next-token prediction".
-
+### 🔥 Introducing Debias: a new loss weighting strategy in noise_prediction mode that solves the bais problem in diffusion model training✨:
 <p align="center">
 <img src="https://github.com/FoundationVision/VAR/assets/39692511/3e12655c-37dc-4528-b923-ec6c4cfef178" width=93%>
 <p>
 
-### 🔥 For the first time, GPT-style autoregressive models surpass diffusion models🚀:
+### 🔥 Debias achieves both higher training efficiency and better performance with same inference steps 🚀:
 <p align="center">
 <img src="https://github.com/FoundationVision/VAR/assets/39692511/cc30b043-fa4e-4d01-a9b1-e50650d5675d" width=55%>
 <p>
