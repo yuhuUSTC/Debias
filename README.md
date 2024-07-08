@@ -33,7 +33,7 @@
 
 
 ## Model zoo
-We provide the pretrained checkpoints which can be downloaded from the following link [checkpoints](https://huggingface.co/FoundationVision/var/resolve/main/var_d16.pth):
+We provide the pretrained checkpoints which can be downloaded from the following link [checkpoints](https://drive.google.com/drive/folders/1iQMyh_ZA7czOwv7QHhw3tQbn4a_itd13?usp=sharing):
 
 
 
